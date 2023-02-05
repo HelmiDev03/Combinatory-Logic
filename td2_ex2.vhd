@@ -1,4 +1,4 @@
-ex2/
+"--ex2"
 1)
 entity mux is port (
 w,c ,z: in std_logic ; 
@@ -14,7 +14,7 @@ when '1' => s<= w;
 end case;
 end process;
 end arch1;
-2)  
+"-2/-"  
 entity circuit is port (
 w,load,y: in std_logic ; 
 z= : out std_logic );
@@ -23,7 +23,7 @@ architecture arch2 of mux is
 begin 
 z<= (x and load ) or (not(load) and y ) ;
 end arch2;
-3)
+"--3)"
 entity fig3 is port (
 xx,loadload,yy,ww,cc: in std_logic ; 
 s: out std_logic );
@@ -43,14 +43,14 @@ end component
 img_2 : port map mux(ww,xx,z,ss);
 end arch3
 
-4)Generic_Code
+"--4)Generic_Code"
 entity fig4 is port(
-P : in std_logic_vector(2 down to 0 ); /*f cuicuit lowel andi x , houni kol circuit(i) beck yeou P(i)
-Q : out std_logic_vector(2 down to 0); /*f sortie ta kol cuicuit  andi S , houni kol circuit(i) beck yeou Q(i) 
-Load : in std_logic; /*jme3a_lkol andhom nafs e Load 
-Di :   in std_logic ; /*awel circuit fi blast Y bech y bech ye5ou Di  wbaed di ta li badou hia Q(i-1) 
-E : in std_logic ; /*jme3a lkol kifik 
-sel : in std_logic /* jme3a lkol kifikf
+P : in std_logic_vector(2 down to 0 ); /"f cuicuit lowel andi x , houni kol circuit(i) beck yeou P(i)"
+Q : out std_logic_vector(2 down to 0); /"f sortie ta kol cuicuit  andi S , houni kol circuit(i) beck yeou Q(i) "
+Load : in std_logic; /"jme3a_lkol andhom nafs e Load "
+Di :   in std_logic ; /"awel circuit fi blast Y bech y bech ye5ou Di  wbaed di ta li badou hia Q(i-1) "
+E : in std_logic ; /"jme3a lkol kifik 
+sel : in std_logic /" jme3a lkol kifikf
 );
 end fig4 ; 
 architecture arch4 of fig4 is
@@ -61,7 +61,7 @@ s: out std_logic );
 end fig4 ;
 
 begin
-/*ps houni fama erreur de syntaxe normalment mais l idee w l'analogie mriglin)
+/"ps houni fama erreur de syntaxe normalment mais l idee w l'analogie mriglin)"
 etiq1 : for i in 0 to 3 generate 
 process(i)
 begin
